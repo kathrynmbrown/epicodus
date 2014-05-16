@@ -1,0 +1,33 @@
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">TwitterClone</a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <% if current_user %>
+        <li class="active"><a href="#">Logged in as <%= current_user.handle %></a></li>
+        <li class="active"><%= link_to "Log Out", logout_path %></li>
+      <% else %>
+        <li class="active"><%= link_to "Sign Up", signup_path %></li>
+        <li class="active"><%= link_to "Log In", login_path %></li>
+      <% end %>
+
+      <li class="has-dropdown">
+        <a href="#">Right Button Dropdown</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+
+    </ul>
+  </section>
+</nav>

@@ -1,0 +1,32 @@
+<div class="user-page container">
+  <div class="row">
+    <div class="col-md-6 user-left">
+      <h1>Welcome <%= @user.email %></h1>
+
+      <%= image_tag @user.avatar.url(:medium), class: "user-avatar" %>
+    </div>
+
+    <div class="col-md-6 user-right">
+      <%= link_to "Add a new photo!", new_photo_path(@user.photos), class: "btn btn-success" %>
+
+    </div>
+
+  </div>
+  <hr>
+
+  <div id="wrapper">
+    <div id="list">
+      <% current_user.photos.each do |photo| %>
+        <div class="item text-center">
+          <br />
+          <%= image_tag photo.image.url(:medium), class: "pinterist-photo", height: '100%', width: '100%' %>
+          <br />
+          <%= photo.description %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>
+
+

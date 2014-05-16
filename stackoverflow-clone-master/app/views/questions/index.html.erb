@@ -1,0 +1,15 @@
+<%= content_for(:title, "HackerTalk Board") %>
+
+<h1>HackerTalk</h1>
+
+<h4><%= link_to "Add a new question", new_question_path, id: "new_link", remote: true %></h4>
+
+
+<div class="row">
+  <div class="large-4 columns eachquestion">
+    <ul><% Question.all.each do |q| %>
+      <li><%= q.content %></li>
+    <% end %>
+    </ul>
+  </div>
+</div>

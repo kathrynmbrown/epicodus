@@ -1,0 +1,23 @@
+<div class="row">
+  <%= @order.user_name %> wants the following: 
+</div>
+<div class="row">
+  <%= @order.drink_category %>
+</div>
+<div class="row">
+  <%= @order.name %>
+</div>
+<div class="row">
+  <%= @order.milk %>
+</div>
+<div class="row">
+  <%= @order.flavor %>
+</div>
+<div class="row">
+  <%= @order.size %>
+</div>
+<div class="row">
+  <%= link_to "Buy it!", order_path(@order), 
+                              :data => {:confirm => "You sure?",
+                                        :method => "delete"}, class: "button" %>
+</div>                                        

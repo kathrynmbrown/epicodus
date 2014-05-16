@@ -1,0 +1,29 @@
+<h1><%= @meal.name %></h1>
+
+<h3><%= @meal.date %></h3>
+
+
+
+
+<div class="table-resonsive">
+  <table class="table">
+    <thead>
+      <th>Food</th>
+      <th>Calories</th>
+      <th>Carb grams</th>
+      <th>Protein grams</th>
+      <th>Fat grams</th>
+    </thead>
+   <% @meal.foods.each do |food| %>
+    <tr><td><h4><%= food.name %></h4></td>
+    <td><%= food.calories %> calories</td>
+    <td><%= food.carb_grams %> carb grams</td>
+    <td><%= food.protein_grams %> protein grams</td>
+    <td><%= food.fat_grams %> fat grams</td></tr>
+  <% end %>
+  </table>
+</div>
+
+
+</ul>
+

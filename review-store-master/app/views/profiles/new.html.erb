@@ -1,0 +1,15 @@
+<h1>Create a profile</h1>
+
+  <%= form_for @profile, :html => { :multipart => true } do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :website_link %>
+  <%= f.text_field :website_link %>
+  <%= f.label :twitter_handle %>
+  <%= f.text_field :twitter_handle %>
+  <%= f.label :headline %>
+  <%= f.text_field :headline %>
+  <%= f.file_field :avatar %>
+  <%= f.hidden_field :user_id, :value => current_user.id  %>
+  <%= f.submit "Create profile", class: "button" %>
+<% end %>

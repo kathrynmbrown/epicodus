@@ -1,0 +1,11 @@
+.result-list {
+  display: none;
+}
+
+.teamList {
+  color: blue;
+}
+
+.teamList:hover {
+  text-decoration: underline;
+}

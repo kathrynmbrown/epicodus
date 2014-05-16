@@ -1,0 +1,19 @@
+<%= form_for @review, :url => reviews_path do |f| %>
+  <div class="field">
+    <%= f.label :rating %><br>
+    <%= f.text_field :rating %> /5
+  </div>
+  <div class="field">
+    <%= f.label :headline %><br>
+    <%= f.text_field :headline %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br>
+    <%= f.text_field :content %>
+  </div>
+  <div class="field">
+    <div class="actions"><%= f.submit "Add review", class: "button" %>
+  </div>
+ <% end %>
+
+

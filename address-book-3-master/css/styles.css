@@ -1,0 +1,46 @@
+#show-contact {
+	display: none;
+}
+
+.contact {
+	cursor: pointer;
+	color: #0088cc;
+}
+
+.contact:hover {
+	text-decoration: underline;
+}
+
+.btn {
+  margin: 5px;
+
+}
+
+.btn-primary {
+  background: #961429;
+  border: solid 1px #333233;
+}
+
+#add-button {
+  background: #7D7D7D;
+  color: white;
+  border: solid 1px #333233;
+}
+
+body {
+  background-color: #DBDBDB;
+  font-family: Palatino;
+}
+
+h1 {
+  color: #961429;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 50px;
+}
+
+.show {
+  font-weight: bold;
+}
+

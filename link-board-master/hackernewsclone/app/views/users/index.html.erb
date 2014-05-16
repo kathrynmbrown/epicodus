@@ -1,0 +1,11 @@
+<%= content_for(:title, 'Index | Users') %>
+
+<div class="row">
+  <ul>
+    <% @users.sort_by!{|user| user.username }.each do |user| %>
+      <li><%= user.username %></li>
+    <% end %>
+  </ul>
+</div>
+
+<%= link_to 'New user', new_user_path %>

@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  database: learn_to_program_development
+
+test:
+  adapter: postgresql
+  database: learn_to_program_test
+

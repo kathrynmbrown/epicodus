@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Triangle Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Triangle Tracker</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Enter three side lengths:</h2>
+          <form id="triangle-lengths">
+            <div class="form-group">
+              <label for="new-side1">Side One:</label>
+              <input type="text" class="form-control" id="new-side1">
+            </div>
+            <div class="form-group">
+              <label for="new-side2">Side Two:</label>
+              <input type="text" class="form-control" id="new-side2">
+            </div>
+            <div class="form-group">
+              <label for="new-side3">Side Three:</label>
+              <input type="text" class="form-control" id="new-side3">
+            </div>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+        </div>
+        <div class="col-md-2">
+            <h2>Equilateral:</h2>
+            <ul id="equilateral">
+            </ul>
+        </div>
+         <div class="col-md-2">
+          <h2>Isosceles:</h2>
+            <ul id="isosceles">
+            </ul>
+        </div>
+         <div class="col-md-2">
+          <h2>Scalene:</h2>
+            <ul id="scalene">
+            </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

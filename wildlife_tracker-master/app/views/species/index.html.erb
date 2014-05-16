@@ -1,0 +1,20 @@
+<h1>Find Sightings by Species</h1>
+
+<h3>Click the species below to see sightings in your area.</h3>
+
+<ul>
+  <% @species.each do |animal| %>
+    <li><a href="/species/<%= animal.id %>"><%= animal.name %></a></li>
+  <% end %>
+</ul>
+
+<h3>Enter a new sighting:</h3>
+
+<form action="/regions/select" method="post">
+  <h4>Select a species that has been sighted</h4>
+  <% @species.each do |animal| %>
+    <span><%= animal.name %></span>
+    <input type="radio" name="species_id" value="<%= animal.id %>">
+  <% end %>
+  <button>Go to regions</button>
+</form>

@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="large-8 columns">
+    <%= image_tag("Reviews.jpg") %>
+  </div>
+  <div class="large-4 columns">
+    <h1>Product Reviews</h1>
+    <h3>The greatest review site ever</h3>
+    <%= link_to "See all reviews", reviews_path, class: "button" %>
+  </div>
+</div>
+<br>
+<br>
+<div class="row">
+  <ul class="small-block-grid-3">
+  <% @products.each do |product| %>
+    <li><%= image_tag product.product_image.url(:medium) %>
+    <%= product.name %>
+    <%= product.description %></li>
+    <%= link_to "See product details", product_path(product) %>
+  <% end %>
+  </ul>
+</div>
+

@@ -1,0 +1,12 @@
+<h1><%= @product.name %></h1>
+<%= image_tag @product.product_image %>
+<p><%= @product.description %></p>
+
+<%= link_to "Edit product", products_path(@product), class: "button" %>
+<%= link_to "Delete product", products_path(@product), class: "button", :data =>
+          { :confirm => "you sure?",
+            :method => "delete" } %>
+
+
+<%= link_to "Add a review", new_review_path(product_id: @product.id), remote: true %>
+<!-- this is broken right now -->

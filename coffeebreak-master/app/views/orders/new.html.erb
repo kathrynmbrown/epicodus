@@ -1,0 +1,16 @@
+<h1>New Order</h1>
+   
+  <%= form_for @order do |f| %>
+  <%= f.label :drink_category %>
+  <%= f.text_field :drink_category %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :milk %>
+  <%= f.text_field :milk %>
+  <%= f.label :flavor %>
+  <%= f.text_field :flavor %>
+  <%= f.label :size %>
+  <%= f.text_field :size %>
+  <%= f.hidden_field :user_name, :value => current_user.name  %>
+  <%= f.submit "Save order", class: "button" %>
+<% end %>  

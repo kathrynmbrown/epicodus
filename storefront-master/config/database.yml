@@ -1,0 +1,10 @@
+
+development:
+  adapter: postgresql
+  database: storefront_development
+
+
+
+test:
+  adapter: postgresql
+  database: storefront_test

@@ -1,0 +1,5 @@
+<h1><%= @this_species.name %></h1>
+
+<% @sightings.each do |sight| %>
+  <%= sight.region.name %> &nbsp; &nbsp; &nbsp; <%= sight.time %>
+<% end %>

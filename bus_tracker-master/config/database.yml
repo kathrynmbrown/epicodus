@@ -1,0 +1,10 @@
+
+development:
+  adapter: postgresql
+  database: bus_stop_development
+
+test:
+  adapter: postgresql
+  database: bus_stop_test
+
+

@@ -1,0 +1,11 @@
+<%= content_for(:title, "Home") %>
+
+<div class="main-page container">
+  <h1>Share your Photastic moments</h1>
+  <div class="row">
+    <div class="photo">
+      <%= image_tag("happy_couple.jpg", height: '70%', width: '70%', class: "happy-couple") %>
+    </div>
+  </div>
+  <%= link_to "Sign up for Photastic", signup_path, class: "signup-button btn btn-success" %>
+</div>

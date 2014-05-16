@@ -1,0 +1,8 @@
+body{
+  text-align: center;
+  font-family: Georgia;
+}
+
+canvas {
+  border: 1px solid black;
+}

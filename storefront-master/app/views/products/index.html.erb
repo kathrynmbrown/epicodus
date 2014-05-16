@@ -1,0 +1,11 @@
+<h1>The Store</h1>
+
+<h2>All Products</h2>
+binding.pry
+ <% @product.each do |p| %>
+   <%= link_to (image_tag p.productimage.url(:medium)), product_path(@product) %>
+   <%= p.name %>
+   <%= p.description %>
+ <% end %>
+
+

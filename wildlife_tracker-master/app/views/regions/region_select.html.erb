@@ -1,0 +1,10 @@
+<h1>Select the Region for current sighting</h1>
+<%= @huh %>
+<form method="post" action="/sightings">
+  <% @regions.each do |region| %>
+    <span><%= region.name %></span>
+    <input type="radio" name="region_id" value="<%= region.id %>">
+  <% end %>
+  <input type="hidden" name="species_id" value="<%= @species_id %>">
+  <button>Next: Set time of sighting</button>
+</form>

@@ -1,0 +1,11 @@
+<h1>Select the time for this current sighting:</h1>
+
+<form method="post" action="/sightings/create">
+  <input type="text" name="time">
+  <input type="hidden" name="species_id" value="<%= @species_id %>">
+  <input type="hidden" name="region_id" value="<%= @region_id %>">
+  <button>Submit sighting</button>
+</form>
+
+
+

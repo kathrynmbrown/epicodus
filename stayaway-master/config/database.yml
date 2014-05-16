@@ -1,0 +1,18 @@
+development:
+  adapter: postgresql
+  database: stayaway_development
+
+
+
+test:
+  adapter: postgresql
+  database: stayaway_test
+
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: stayaway_production
+  pool: 5
+  username: stayaway
+  password:

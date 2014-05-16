@@ -1,0 +1,28 @@
+<%= content_for(:title, "Sign In") %>
+
+<div class="input-page container">
+  <h1>Login</h1>
+
+  <%= form_tag sessions_path do %>
+    <%# if @session.errors.any? %>
+      <!-- <div class="red error_messages">
+        <h2>Invalid email or password</h2>
+        <ul> -->
+          <%# @session.errors.full_messages.each do |message| %>
+            <!-- <li><%#= message %></li> -->
+          <%# end %>
+        <!-- </ul>
+      </div> -->
+    <%# end %>
+
+    <div class="field">
+      <%= label_tag :email %><br />
+      <%= text_field_tag :email, params[:email], class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= label_tag :password %><br />
+      <%= password_field_tag :password, class: 'form-control' %>
+    </div>
+    <div class="actions"><%= submit_tag "Sign In" %></div>
+  <% end %>
+</div>

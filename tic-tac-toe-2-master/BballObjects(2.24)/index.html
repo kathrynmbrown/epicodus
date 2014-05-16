@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Baseball teams</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Baseball Teams</h1>
+      <h2>Name your favorite baseball team!</h2>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Name a team:</h2>
+          <form id="baseball-team">
+            <div class="form-group">
+              <label for="new-team-name">Team name</label>
+              <input type="text" class="form-control" id="new-team-name">
+            </div>
+            <div class="form-group">
+              <label for="new-team-city">City location</label>
+              <input type="text" class="form-control" id="new-team-city">
+            </div>
+            <div class="form-group">
+              <label for="new-team-state">State location</label>
+              <input type="text" class="form-control" id="new-team-state">
+            </div>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+          <h2>Teams:</h2>
+          <ul id="teams">
+
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div class="result-list">  
+            <h2></h2>
+            <p>Team name: <span class="teamName"></span></p>
+            <p>Team city: <span class="teamCity"></span></p>
+            <p>Team state: <span class="teamState"></span></p> 
+          </div>
+        </div>  
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="col-md-6">
+          <div id="show-contact">
+            <h2></h2>
+
+            <p>First name:<span class="first-name"></span></p>
+            <p>Last name:<span class="last-name"></span></p>
+            <p>Address:<span class="address"></span></p>
+          </div>
+        </div> -->

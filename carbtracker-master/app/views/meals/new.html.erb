@@ -1,0 +1,43 @@
+<h1>Track a new meal</h1>
+
+<form action="/meals" method="post">
+  <%= render('form') %>
+<h3>Add a new food to this meal:</h3>
+  <select name="food1_id">
+    <% Food.all.each do |food| %>
+      <option value="<%=food.id%>"><%= food.name %></option>
+    <% end %>
+  </select>
+  </br>
+  <select name="food2_id">
+    <% Food.all.each do |food| %>
+      <option value="<%=food.id%>"><%= food.name %></option>
+    <% end %>
+  </select>
+  </br>
+  <select name="food3_id">
+    <% Food.all.each do |food| %>
+      <option value="<%=food.id%>"><%= food.name %></option>
+    <% end %>
+  </select>
+  </br>
+  <select name="food4_id">
+    <% Food.all.each do |food| %>
+      <option value="<%=food.id%>"><%= food.name %></option>
+    <% end %>
+  </select>
+  </br>
+  <select name="food5_id">
+    <% Food.all.each do |food| %>
+      <option value="<%=food.id%>"><%= food.name %></option>
+    <% end %>
+  </select>
+  </br>
+  <select name="food6_id">
+    <% Food.all.each do |food| %>
+      <option value="<%=food.id%>"><%= food.name %></option>
+    <% end %>
+  </select>
+  </br>
+  <button>Track meal</button>
+</form>

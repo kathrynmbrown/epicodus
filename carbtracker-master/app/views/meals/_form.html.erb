@@ -1,0 +1,7 @@
+<select name="meal_name">
+    <% Meal.all.each do |meal| %>
+      <option value="<%=meal.name%>"><%= meal.name %></option>
+    <% end %>
+  </select>
+<label for="meal_date">Date</label>
+  <input id="meal_date" name="date" type="date">

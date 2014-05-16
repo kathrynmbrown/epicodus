@@ -1,0 +1,24 @@
+<div class="row">
+  <h1>Add your place to our directory!</h1>
+</div>
+<div class="row">
+
+<%= form_for @place, :url => places_path, :html => { :multipart => true } do |f| %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title, autofocus: true %>
+  </div>
+   <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+      <%= f.label :housepic %><br />
+      <%= f.file_field :housepic %>
+  </div>
+  <div class="field">
+    <div class="actions"><%= f.submit "Add property", class: "button" %>
+  </div>
+<% end %>
+</div>

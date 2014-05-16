@@ -1,0 +1,8 @@
+  <p><%= comment.content %></p>
+  <% if comment.comments.any? %>
+    <div class="row">
+      <% comment.comments.each do |text| %>
+        <%= render('comments', comment: text) %>
+      <% end %>
+    </div>
+  <% end %>

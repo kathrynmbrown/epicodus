@@ -1,0 +1,43 @@
+<%= content_for(:title, "Sign up") %>
+<div class="row">
+ <h1>Sign Up</h1>
+  <%= form_for @user, :url => users_path, :html => { :multipart => true } do |f| %>
+    <% if @user.errors.any? %>
+      <div class="red error_messages">
+        <h2>Invalid email or password</h2>
+        <ul>
+          <% @user.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+  <div class="large-4 columns">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+</div>
+<div class="row">
+  <div class="large-4 columns">
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+  </div>
+</div>
+<div class="row">
+  <div class="large-4 columns">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+</div>
+<div class="row">
+  <div class="large-4 columns">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+</div>
+<div class="row">
+  <div class="actions"><%= f.submit "Sign Up", class: "button"%></div>
+  <% end %>
+</div>
+</div>

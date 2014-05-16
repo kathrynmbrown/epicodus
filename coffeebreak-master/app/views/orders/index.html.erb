@@ -1,0 +1,16 @@
+<h1>See all current orders</h1>
+
+<p>Click fill order to choose the person you would like to treat!</p>
+
+<div class="row">
+    <div class="small-2 large-4 columns">
+      <% @orders.each do |order| %>
+        <%= image_tag current_user.avatar(:medium) %>
+        <%= link_to order.name, order_path(order) %> for <%= order.user_name %>
+      <% end %>
+    </div>
+</div>    
+
+
+
+

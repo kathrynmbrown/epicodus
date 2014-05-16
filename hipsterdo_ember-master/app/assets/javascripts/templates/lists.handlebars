@@ -1,0 +1,14 @@
+<h1>HipsterDo</h1>
+
+<h3>Do all these things. Or don't. It doesn't matter anyway.</h3>
+
+<ul>
+  {{#each list in controller itemController='list'}}
+    <li>{{# link-to 'list' list}}{{name}}{{/link-to}}</li>
+    <button {{action deleteList}} class="btn btn-danger btn-xs">Delete</button></li>
+  {{/each}}
+</ul>
+
+{{#link-to 'new_list'}}New list{{/link-to}}
+
+{{outlet}}

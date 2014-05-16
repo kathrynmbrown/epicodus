@@ -1,0 +1,17 @@
+<h1>Foods</h1>
+
+<h3>Here is a list of all your foods:</h3>
+
+<ul>
+  <% @foods.each do |food| %>
+    <li><a href="/foods/<%= food.id %>"><%= food.name %></a></li>
+    <a href="/foods/<%= food.id %>/edit">Edit this food</a>
+    <a href="/foods/<%= food.id %>"
+      data-confirm="Really?"
+      data-method="delete"
+      rel="nofollow">Delete</a>
+  <% end %>
+</ul>
+
+<a href="/foods/new">Add a new food to the database</a>
+

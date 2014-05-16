@@ -1,0 +1,9 @@
+
+development:
+  adapter: postgresql
+  database: wikipages_development
+  
+test:
+  adapter: postgresql
+  database: wikipages_test
+  

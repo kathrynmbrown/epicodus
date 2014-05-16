@@ -1,0 +1,16 @@
+<h1><%= @lesson.name %></h1>
+
+<p><%= @lesson.lesson_text %></p>
+
+<a href="/lessons">Return to Table of Contents</a>
+
+<% if @lesson.id == 1 %>
+  <li><a href="/lessons/<%= @lesson.id + 1 %>"><"Next Lesson"></a></li>
+<% elsif Lesson.exists?(@lesson.id + 1) %>
+  <li><a href="/lessons/<%= @lesson.id - 1 %>"><"Previous Lesson"></a></li><li><a href="/lessons/<%= @lesson.id + 1 %>"><"Next Lesson"></a></li>
+<% else %>
+  <li><a href="/lessons/<%= @lesson.id - 1 %>"><"Previous Lesson"></a></li>
+<% end %>
+
+
+

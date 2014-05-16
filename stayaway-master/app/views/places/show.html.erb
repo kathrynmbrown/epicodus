@@ -1,0 +1,16 @@
+<h1><%= @place.title %></h1>
+
+<h3>LOCATION</h3>
+
+<h4>Posted by: <%= @place.user_id %></h4>
+
+<p><%= @place.description %></p>
+
+<%= link_to "Delete entry", place_path(@place), :method => "delete", class: "button" %>
+
+<!-- Previous reviews go here -->
+
+<h3>Leave a review about <%= @place.title %> below</h3>
+
+<%= link_to "Add review", new_review_path, class: "button", id: "new_review_link", remote: true %>
+

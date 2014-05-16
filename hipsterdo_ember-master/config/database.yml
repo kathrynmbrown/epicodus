@@ -1,0 +1,17 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: hipster-do_development
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: hipster-do_test
+
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: hipster-do_production
+

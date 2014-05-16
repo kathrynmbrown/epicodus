@@ -1,0 +1,11 @@
+
+development:
+  adapter: postgresql
+  database: carbtracker_development
+
+
+test:
+  adapter: postgresql
+  database: carbtracker_test
+
+

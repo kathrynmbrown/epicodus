@@ -1,0 +1,155 @@
+$Inder: 'Inder', sans-serif;
+$Main-Font: 'ABeeZee', sans-serif;
+$ConcertOne: 'Concert One', cursive;
+$Sniglet: 'Sniglet', cursive;
+$Roboto: 'Roboto', sans-serif;
+
+/* Header =================================================================== */
+
+.header {
+  background-color: DeepSkyBlue;
+  color: white;
+  ul li {
+    list-style: none;
+  }
+}
+
+.brand {
+  font-family: $Main-Font;
+  font-size: 1.7em;
+  padding-top: 8px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: Purple;
+    text-decoration: none;
+  }
+  li {
+    display: inline;
+  }
+}
+
+.header-links {
+  padding: 15px 35px 0px 0px;
+  font-size: 1.2em;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: Purple;
+    text-decoration: none;
+  }
+  li {
+    display: inline;
+    margin-left: 10px;
+  }
+}
+
+.purple {
+  color: Purple;
+}
+
+.container-inner {
+  width: 100%;
+
+}
+
+/* Body =================================================================== */
+
+.flash {
+  margin-top: 60px;
+  right: 0px;
+  font-size: 2em;
+  .green {
+    list-style: none;
+    color: #60b044;
+  }
+}
+
+.red {
+  list-style: none;
+  color: Red;
+}
+
+.main-page {
+  margin: 0 auto;
+  margin-top: 150px;
+  text-align: center;
+  h1 {
+    font-family: $Main-Font;
+    font-size: 3.5em;
+  }
+  .happy-couple {
+    border: 1px solid DeepSkyBlue;
+  }
+  .signup-button {
+    padding: 20px 30px;
+    background-color: #60b044;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+}
+
+.input-page {
+  margin: 0 auto;
+  margin-top: 50px;
+  .form-control {
+    width: 30%;
+  }
+  .actions {
+    margin-top: 10px;
+  }
+}
+
+.user-page {
+  margin: 0 auto;
+  margin-top: 50px;
+  .user-avatar {
+    margin: 25px 0px;
+    border: 1px solid DeepSkyBlue;
+  }
+  .user-right {
+    margin-top: 100px;
+  }
+}
+
+#wrapper
+{
+    max-width: 90em; /* 960 px */
+    margin: 0 auto;
+}
+    #list
+    {
+        width: 110%; /* 990px */
+        overflow: hidden;
+        margin-left: -1.562%; /* 15px */
+        margin-bottom: -1.875em; /* 30px */
+    }
+        .item
+        {
+            width: 30.303%; /* 300px */
+            float: left;
+            margin: 0 1.515% 1.875em; /* 15px 30px */
+            margin-bottom: 30px;
+            background-color: DeepSkyBlue;
+            color: White;
+            border: 1px solid Purple;
+            font-size: 16px;
+            font-weight: 300;
+            .pinterist-photo {
+              text-align: center;
+              border-top: 1px solid Purple;
+              border-bottom: 1px solid Purple;
+            }
+        }
+
+
+/* Footer =================================================================== */
+
+.footer {
+  background-color: WhiteSmoke;
+}

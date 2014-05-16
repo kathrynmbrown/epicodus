@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @link.title %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @link.url %>
+</p>
+
+<p>
+  <strong>Post date:</strong>
+  <%= @link.post_date %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @link.user_id %>
+</p>
+
+<form>
+  <input type='text' name='comment'>
+</form>
+
+<% if @link.comments.any? %>
+  <div class="row">
+    <% @link.comments.each do |comment| %>
+      <%= render('comments/comments', comment: comment) %>
+    <% end %>
+  </div>
+<% end %>
+
+<%= link_to 'Edit', edit_link_path(@link) %> |
+<%= link_to 'Back', links_path %>

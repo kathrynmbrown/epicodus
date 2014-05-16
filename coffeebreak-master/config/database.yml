@@ -1,0 +1,19 @@
+
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: coffeebreak_development
+ 
+
+  
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: coffeebreak_test
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: coffeebreak_production
+

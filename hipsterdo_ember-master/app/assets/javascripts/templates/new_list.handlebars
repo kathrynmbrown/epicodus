@@ -1,0 +1,20 @@
+<h1>New List</h1>
+
+<form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    {{#each error in errors.name}}
+      {{error.message}}
+    {{/each}}
+    {{input type="text" id="name" class="form-control" value=name}}
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    {{#each error in errors.description}}
+      {{error.message}}
+    {{/each}}
+    {{input type="text" id="description" class="form-control" value=description}}
+  </div>
+
+  <button {{action createList}} class="btn btn-default">Create list</button>
+</form>

@@ -1,0 +1,13 @@
+
+<form action="/questions" method="post">
+  <%= form_for @question, remote: true do |f| %>
+  <div class="form-group">
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+  </div>
+  <div class="actions"><%= f.submit "Ask Question", class: "button"%></div>
+<% end %>
+</form>
+
+
+

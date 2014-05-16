@@ -1,0 +1,7 @@
+<h1>Here are all of the stations</h1>
+
+<ul>
+<% Station.all.each do |station| %>
+  <li><p><a href="/stations/<%= station.id %>"><%= station.name %></a></p></li>
+</ul>
+<% end %>

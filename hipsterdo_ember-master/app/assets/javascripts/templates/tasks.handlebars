@@ -1,0 +1,9 @@
+<h1>Tasks</h1>
+
+<ul>
+  {{#each task in controller}}
+    <li>{{#link-to 'task' task}}{{task.name}}{{/link-to}}</li>
+  {{/each}}
+<ul>
+
+

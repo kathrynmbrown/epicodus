@@ -1,0 +1,82 @@
+#result {
+  display: none;
+}
+
+    html, body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      #full-screen-background-image {
+        z-index: -999;
+        min-height: 100%;
+        min-width: 1024px;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+
+
+
+h1 {
+  color: #ff0030;
+  text-align: left;
+  font-family: 'AmericanTypewriter', Cambria, Georgia;
+  font-size: 3em;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);;
+}
+
+h2 {
+  color: #000000;
+}
+
+p {
+  color: #000000;
+}
+
+.btn {
+   padding: 20px;
+   margin: 10px;
+   background: #ff0030;
+   color: #fff;
+   font-size: 21px;
+   font-weight: bold;
+   line-height: 1.3em;
+   border: 2px dashed #fff;
+   border-radius: 10px;
+   box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   text-shadow: -1px -1px #aa3030;
+   font-weight: normal;
+}
+
+.title {
+  color: #ff0030;
+  font-family: 'PT Mono', sans-serif;
+  font-size: 2em;
+}
+
+#instructions {
+  font: 16px 'AmericanTypewriter', Cambria, Georgia; color: #282625; margin: 0 auto; width: 600px;
+}
+
+.paper {
+  background-color: #ffffff; 
+  opacity: .8;
+  float: right;
+  padding: 15px;
+  position:fixed;
+  top:30px;
+  right:30px;
+  border-radius: 15px;
+}
+
+
+
+
+

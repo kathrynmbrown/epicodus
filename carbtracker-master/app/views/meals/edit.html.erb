@@ -1,0 +1,10 @@
+<form action="/meals/<% @meal.id %>" method="post">
+<h3>Add a new food to this meal:</h3>
+<input name="_method" type="hidden" value="patch">
+  <select name="food_id">
+    <% Food.all.each do |food| %>
+      <option value="<%=food.id%>"><%= food.name %></option>
+    <% end %>
+  </select>
+  <button>Add food</button>
+</form>

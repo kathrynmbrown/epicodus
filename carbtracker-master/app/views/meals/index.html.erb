@@ -1,0 +1,12 @@
+<h1>Here are all your meals:</h1>
+
+<ul>
+  <% @meals.each do |meal| %>
+    <li><a href="/meals/<%= meal.id %>"><%= meal.name %><%= meal.date %></a></li>
+    <a href="/meals/<%= meal.id %>/edit">Edit this meal</a>
+    <a href="/meals/<%= meal.id %>"
+      data-confirm="Really?"
+      data-method="delete"
+      rel="nofollow">Delete</a>
+  <% end %>
+</ul>
